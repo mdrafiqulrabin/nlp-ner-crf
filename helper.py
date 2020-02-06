@@ -1,5 +1,25 @@
 import re
+import config as cf
+import _pickle as pk
 
+# Logs
+def saveLogMsg(msg):
+    print(msg)
+    with open(cf.LOG_PATH, "a") as log_file:
+        log_file.write(msg + "\n")
+
+# Models
+def load_model():
+    model = None
+    with open(cf.MODEL_PATH, 'rb') as fmod:
+        model = pk.load(fmod)
+    return model
+
+def save_model(model):
+    with open(cf.MODEL_PATH, 'wb') as fmod:
+        pk.dump(model, fmod)
+
+# Features
 def get_allnumber(word):
     word = str(word)
     try:
