@@ -1,5 +1,8 @@
-# OS
+# Garbage
 .DS_Store
+Icon?
+.idea
+temp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
