@@ -25,3 +25,6 @@ RESULT_PATH = ROOT_PATH   + "temp/result/"
 LOG_PATH    = RESULT_PATH + TITLE + ".log"
 MODEL_PATH  = RESULT_PATH + TITLE + ".model"
 PREDICT_PATH = RESULT_PATH + "predict.txt"
+
+# Top-k
+TOP_K = 5
